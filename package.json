@@ -1,0 +1,26 @@
+{
+  "name": "blackboard",
+  "homepage": "https://SuryanshThakur.github.io/BlackBoard",
+  "version": "1.0.0",
+  "description": "BlackBoard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "client": "npm start --prefix client",
+    "server": "npm start --prefix server",
+    "dev": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "brcypt": "^1.0.1",
+    "concurrently": "^8.0.1",
+    "gh-pages": "^6.1.1",
+    "multer": "^1.4.5-lts.1",
+    "my-project": "^0.0.1",
+    "pdfjs-dist": "^4.0.379"
+  }
+}
