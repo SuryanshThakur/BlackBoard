@@ -13,7 +13,7 @@ function AddFile() {
   }, []);
   
   const getPdf = async () => {
-    const result = await axios.get("http://localhost:5001/get-files");
+    const result = await axios.get("https://blackboard-backend-rrtn.onrender.com/get-files");
     console.log(result.data.data);
     setAllImage(result.data.data);
   };
@@ -26,7 +26,7 @@ function AddFile() {
     console.log(title, file);
 
     const result = await axios.post(
-      "http://localhost:5001/upload-files",
+      "https://blackboard-backend-rrtn.onrender.com/upload-files",
       formData,
       {
         headers: { "Content-Type": "multipart/form-data" },
@@ -40,7 +40,7 @@ function AddFile() {
   };
   
   const showPdf = (pdf) => {
-    setPdfFile(`http://localhost:5001/files/${pdf}`)
+    setPdfFile(`https://blackboard-backend-rrtn.onrender.com/files/${pdf}`)
   };
 
   return (

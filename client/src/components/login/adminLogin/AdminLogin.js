@@ -86,9 +86,18 @@ const AdminLogin = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-red-500 hover:bg-gray-200 text-black py-3 rounded-lg text-center transition-all duration-300"
+              className="w-full bg-red-500 hover:bg-gray-200 text-black py-3 rounded-lg text-center transition-all duration-300 relative"
             >
-              {loading ? <Spinner size={20} color="white" /> : "Login"}
+              {loading && (
+                <Spinner
+                  size={30}
+                  color="white"
+                  height={30}
+                  width={30}
+                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                />
+              )}
+              {loading ? "" : "Login"}
             </button>
             {(error.usernameError || error.passwordError) && (
               <p className="text-red-500">

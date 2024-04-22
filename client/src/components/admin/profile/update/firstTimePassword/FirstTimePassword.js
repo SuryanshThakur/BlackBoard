@@ -5,8 +5,8 @@ import Header from "../../../Header";
 
 const FirstTimePassword = () => {
   return (
-    <div className="bg-[#d6d9e0] h-screen flex items-center justify-center">
-      <div className="flex flex-col  bg-[#f4f6fa] h-5/6 w-[95%] rounded-2xl shadow-2xl space-y-6 ">
+    <div className="bg-[#b5b5b5] h-screen flex items-center justify-center">
+      <div className="flex flex-col  bg-[#b5b5b5] h-[100%] w-[100%]  ">
         <Header />
         <div className="flex flex-[0.95] w-full">
           <Body />

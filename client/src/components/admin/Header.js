@@ -23,8 +23,8 @@ return (
         <Avatar
           src={user.result.avatar}
           alt={user.result.name.charAt(0)}
-          sx={{ width: 24, height: 24 }}
-          className="border-blue-600 border-2"
+          sx={{ width: 47, height: 47 }}
+          className="border-red-400 border-2"
         />
         <h1 className="text-white">{user.result.name.split(" ")[0]}</h1>
         <LogoutIcon
